@@ -6,3 +6,7 @@ gulp.task('styles', async function(){
         .pipe(autoprefixer())
         .pipe(gulp.dest('build'))
 });
+
+gulp.task('watch', function(){
+    gulp.watch('css/styles.css', gulp.series('styles'));
+});
