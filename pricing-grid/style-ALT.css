@@ -74,13 +74,17 @@ a {
 
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
+  /* I think we can improve on Wes' solution */
+  /* What if we use flex-drection: column instead of wrap? */
+  flex-direction: column;
 }
 
-.plan>* {
+/*We end up not needing ANY of this anymore*/
+/* .plan>* {
   flex: 1 1 100%;
-}
+} */
 
-.plan .cta {
+
+/* .plan .cta {
   align-self: flex-end;
-}
+} */
